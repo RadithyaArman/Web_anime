@@ -14,13 +14,13 @@ class Eps_model {
 
     public function getEpsById($id) {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
-        $this->db-bind('id', $id);
+        $this->db->bind('id', $id);
         return $this->db->single();
     }
 
     public function getEpsByAnime($id) {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id_anime=:id');
-        $this->db-bind('id', $id);
+        $this->db->bind('id', $id);
         return $this->db->resultSet();
     }
 }

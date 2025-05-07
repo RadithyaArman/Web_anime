@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top {
@@ -11,24 +12,30 @@ body {
     background-color: black;
 }
 
+.top a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     margin: 40px 20px;
     padding: 0 20px;
-    /* border: 1px solid black; */
 }
+
+/* Home */
 
 .list h2{
     margin-top: -5px;
     padding: 10px 20px;
-    background-color: blue;
+    background-color: black;
     color: white;
 }
 
 .list {
     margin-top: -20px;
+    background-color: white;
     margin-bottom: 50px;
     padding: 5px 0;
-    /* height: 300px; */
     border: 1px solid black;
     overflow: hidden;
 }
@@ -41,29 +48,47 @@ body {
 }
 
 .list li {
-    padding: 0 20px;
+    margin: 0 20px;
+    padding: 0px;
     text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .list li span {
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -4px;
     display: block;
-    margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
 }
 
 .list li:last-child {
     margin-right: 30px;
 }
 
+.list img {
+    height: 300px;
+    width: 200px;
+    transition: filter 0.3s ease;
+}
+
+.list img:hover {
+    filter: brightness(60%);
+    
+}
+
 .latest h2{
     margin-top: -5px;
     padding: 10px 20px;
-    background-color: blue;
+    background-color: black;
     color: white;
 }
 
 .latest {
+    background-color: white;
     margin-top: -20px;
     padding: 5px 0;
     height: 500px;
@@ -76,9 +101,119 @@ body {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    margin: 0 -20px;
+    margin: 0 4px;
 }
 
-.latest li img{
-    display: block;
+.latest .info {
+    display: flex;
+    flex-direction: column;
 }
+
+.latest li a{
+    display: flex;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+
+.latest span {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.latest li img {
+    height: 300px;
+    width: 200px;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.latest li:hover {
+    filter: brightness(60%);
+}
+
+
+/* Detail */
+
+.detail {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.detail img {
+    height: 300px;
+    width: 200px;
+}
+
+.detailkiri {
+    border: 1px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.detailkiri p {
+    font-weight: bold;
+}
+
+.detailkanan {
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    padding: 0 20px;
+}
+
+.video {
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.video h3 {
+    padding: 5px 10px;
+    margin-top: 0;
+    background-color: black;
+    color: white;
+}
+
+.video ul {
+    overflow-y: scroll;
+}
+
+
+.video a {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.video a:hover {
+    background-color: gray;
+}
+
+
+/* Episode */
+
+.eps {
+    background-color: white;
+    border: 1px solid black;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
