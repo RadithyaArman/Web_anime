@@ -1,6 +1,6 @@
 <?php
 class Eps extends Controller {
-    public function Index($id) {
+    public function index($id) {
         $data['anime'] = $this->model('Anime_model')->getAnimeById($id);
         $data['eps'] = $this->model('Eps_model')->getEpsByAnime($id);
         $this->view('templates/header');
